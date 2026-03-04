@@ -8,6 +8,21 @@
     col-offset = <6>;
 };
 
+&gpio0 {
+    sensor_cursor_id {
+        gpio-hog;
+        /* 実際の基板の配線に合わせてNCSのピン番号を変更してください */
+        gpios = <4 GPIO_ACTIVE_HIGH>;
+        output-high;
+    };
+    sensor_scroll_id {
+        gpio-hog;
+        /* 実際の基板の配線に合わせてNCSのピン番号を変更してください */
+        gpios = <2 GPIO_ACTIVE_HIGH>;
+        output-low;
+    };
+};
+
 &gpio1 {
     sensor_wakeup {
         gpio-hog;
@@ -42,25 +57,6 @@
     };
 };
 
-&trackball_listener_R {
-    status = "okay";
-    device = <&trackball_R>;
-    input-processors = <&zip_report_rate_limit 8>;
-};
-
-/ {
-    trackball_listener_R_scroll: trackball_listener_R_scroll {
-        compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&trackball_R_scroll>;
-        input-processors =
-            <&zip_report_rate_limit 8>,
-            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 4>;
-    };
-};
-
 &i2c0 {
     status = "okay";
     compatible = "nordic,nrf-twim";
@@ -71,7 +67,6 @@
     #address-cells = <1>;
     #size-cells = <0>;
 
-    /* NCSを3.3Vにハード配線 (アドレス 0x73) */
     trackball_R: trackball_R@73 {
         compatible = "pixart,pat912x";
         reg = <0x73>;
@@ -81,9 +76,10 @@
         res-y-cpi = <600>;
         zephyr,axis-x = <INPUT_REL_X>;
         zephyr,axis-y = <INPUT_REL_Y>;
+        ready-time-ms = <10>;
+        input-processors = <&zip_report_rate_limit 8>;
     };
 
-    /* NCSをGNDにハード配線 (アドレス 0x75) */
     trackball_R_scroll: trackball_R_scroll@75 {
         compatible = "pixart,pat912x";
         reg = <0x75>;
@@ -93,10 +89,15 @@
         res-y-cpi = <600>;
         zephyr,axis-x = <INPUT_REL_X>;
         zephyr,axis-y = <INPUT_REL_Y>;
+        ready-time-ms = <10>;
+        input-processors =
+            <&zip_report_rate_limit 8>,
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_scaler 1 4>;
     };
 };
 
-/* UARTピンとの競合を防ぎ、P1.12をセンサーのmotionピンとして解放する */
 &uart0 {
     status = "disabled";
 };
