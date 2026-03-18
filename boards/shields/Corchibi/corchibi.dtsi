@@ -5,8 +5,6 @@
 #include <input/processors.dtsi>
 #include <physical_layouts.dtsi>
 
-#include <input/processors/report_rate_limit.dtsi>
-
 &uicr {
     nfct-pins-as-gpios;
 };
@@ -37,7 +35,6 @@
         status = "okay";
         device = <&trackball_split_L>;
         input-processors =
-            <&zip_report_rate_limit 8>,
             <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 4>;
@@ -46,7 +43,6 @@
     trackball_listener_R: trackball_listener_R {
         compatible = "zmk,input-listener";
         status = "disabled";
-        input-processors = <&zip_report_rate_limit 8>;
     };
 
     default_transform: keymap_transform_0 {
