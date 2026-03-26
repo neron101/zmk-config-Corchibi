@@ -9,15 +9,12 @@ manifest:
     - name: nuovotaka
       url-base: https://github.com/nuovotaka
   projects:
-    - name: zmk-input-processor-report-rate-limit
-      remote: badjeff
-      revision: main
     - name: zmk-pointing-acceleration-alpha
       remote: nuovotaka
       revision: main
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 354cff9
       import: app/west.yml
   self:
     path: config
