@@ -39,8 +39,8 @@
     input-type = <INPUT_EV_REL>;
     codes = <INPUT_REL_X INPUT_REL_Y>;
     sensor-dpi = <1200>;
-    min-factor = <4>;     /* 前回の3分の1: 0.004倍。顕微鏡のような精密さ。 */
-    max-factor = <11>;    /* 前回の3分の1: 0.011倍。加速しても非常にゆっくり。 */
+    min-factor = <1>;     /* 最小倍率: 1/1000。もはやボールを動かしてもドットが動くかどうかの極小感度。 */
+    max-factor = <2>;     /* 最大倍率: 2/1000。速く動かしてもカーソルがほとんど吹っ飛ばない。 */
     speed-threshold = <400>; 
     speed-max = <1200>; 
     acceleration-exponent = <1200>; 
