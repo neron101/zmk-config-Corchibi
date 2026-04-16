@@ -449,6 +449,18 @@ text { fill: #000000; }
 <a href="#x_x">
 <text x="0" y="25" class="key hold layer-activator">2</text>
 </a></g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="266" y="36" width="28" height="26" class="combo"/>
+<text x="280" y="49" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="266" y="92" width="28" height="26" class="combo"/>
+<text x="280" y="105" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 350)" class="layer-1">
@@ -714,6 +726,18 @@ text { fill: #000000; }
 <rect rx="8" ry="8" x="-21" y="-21" width="42" height="42" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="266" y="36" width="28" height="26" class="combo"/>
+<text x="280" y="49" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="266" y="92" width="28" height="26" class="combo"/>
+<text x="280" y="105" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 699)" class="layer-2">
@@ -975,6 +999,18 @@ text { fill: #000000; }
 <g transform="translate(551, 257) rotate(-23.0)" class="key held keypos-49">
 <rect rx="6" ry="6" x="-27" y="-27" width="54" height="54" class="key held side"/>
 <rect rx="8" ry="8" x="-21" y="-21" width="42" height="42" class="key held"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="266" y="36" width="28" height="26" class="combo"/>
+<text x="280" y="49" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="266" y="92" width="28" height="26" class="combo"/>
+<text x="280" y="105" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">2</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1240,6 +1276,18 @@ text { fill: #000000; }
 <rect rx="8" ry="8" x="-21" y="-21" width="42" height="42" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="266" y="36" width="28" height="26" class="combo"/>
+<text x="280" y="49" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="266" y="92" width="28" height="26" class="combo"/>
+<text x="280" y="105" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1399)" class="layer-4">
@@ -1501,6 +1549,18 @@ text { fill: #000000; }
 <rect rx="8" ry="8" x="-21" y="-21" width="42" height="42" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="266" y="36" width="28" height="26" class="combo"/>
+<text x="280" y="49" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="266" y="92" width="28" height="26" class="combo"/>
+<text x="280" y="105" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">2</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1748)" class="layer-5">
@@ -1754,6 +1814,18 @@ text { fill: #000000; }
 <rect rx="6" ry="6" x="-27" y="-27" width="54" height="54" class="key trans side"/>
 <rect rx="8" ry="8" x="-21" y="-21" width="42" height="42" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="266" y="36" width="28" height="26" class="combo"/>
+<text x="280" y="49" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="266" y="92" width="28" height="26" class="combo"/>
+<text x="280" y="105" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="280" dy="1.2em" style="font-size: 88%">2</tspan>
+</text>
 </g>
 </g>
 </g>
