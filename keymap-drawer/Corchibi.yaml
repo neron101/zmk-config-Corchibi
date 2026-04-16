@@ -30,13 +30,13 @@ layers:
   - KP EQUAL
   - '?'
   - RIGHT
-  - ':'
+  - '{'
   - UP
   - DOWN
   - O
   - .
   - RIGHT
-  - {t: I, h: '5'}
+  - I
   - K
   - U
   - J
@@ -78,10 +78,10 @@ layers:
   - '5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '}'
+  - /
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '{'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '9'
@@ -129,10 +129,10 @@ layers:
   - Sft+5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - /
+  - /
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ':'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+9
@@ -291,7 +291,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -311,3 +311,7 @@ combos:
   k: LANGUAGE 1
 - p: [16, 13]
   k: LANGUAGE 2
+- p: [0, 20]
+  k: '{'
+- p: [4, 1]
+  k: '}'
