@@ -33,19 +33,19 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp TAB  &kp LSHFT  &kp LCTRL  &kp A  &kp Z  &kp LGUI  &kp W  &kp X  &kp LALT  &kp E  &kp D  &kp R  &kp F  &kp V  &mo 1  &kp G  &kp B  &mo 2  &kp N9  &kp Q  &kp S  &kp C  &kp T  &kp SPACE  &kp BSPC  &kp RET  &kp QMARK  &kp RIGHT  &kp COLON  &kp UP  &kp DOWN  &kp O  &kp DOT  &kp RIGHT  &lt 5 I  &kp K  &kp U  &kp J  &kp M  &lt 5 A  &kp H  &kp N  &mo 3  &kp N8  &kp P  &kp L  &kp COMMA  &kp Y  &kp SPACE
+&kp TAB  &kp CLCK  &kp LSHFT  &kp LCTRL  &kp A  &kp Z  &mkp MB2  &kp W  &kp X  &kp LALT  &kp E  &kp D  &kp R  &kp F  &kp V  &kp LEFT_GUI  &kp G  &kp B  &lt 1 SPACE  &TB1_scroll  &kp Q  &kp S  &kp C  &kp T  &mkp MB1  &kp BSPC  &kp RET  &kp QMARK  &kp RIGHT  &kp COLON  &kp UP  &kp DOWN  &kp O  &kp DOT  &kp RIGHT  &lt 5 I  &kp K  &kp U  &kp J  &kp M  &TB1_mouse  &kp H  &kp N  &kp BACKSPACE  &TB1_mouse  &kp P  &kp L  &kp COMMA  &kp Y  &lt 2 ENTER
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_2  &trans  &trans  &kp NUMBER_3  &kp SEMICOLON  &kp NUMBER_4  &kp SLASH  &trans  &trans  &kp MINUS  &trans  &trans  &trans  &kp NUMBER_1  &kp DOUBLE_QUOTES  &trans  &kp NUMBER_5  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_9  &trans  &trans  &kp N8  &kp DOUBLE_QUOTES  &kp NUMBER_7  &kp EQUAL  &trans  &trans  &kp KP_PLUS  &trans  &trans  &trans  &kp NUMBER_0  &kp SQT  &trans  &kp NUMBER_6  &trans
+&trans  &trans  &trans  &trans  &kp LEFT  &kp LEFT  &trans  &kp NUMBER_2  &kp DOWN  &trans  &kp NUMBER_3  &kp RIGHT  &kp NUMBER_4  &trans  &trans  &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &trans  &trans  &kp NUMBER_1  &kp UP_ARROW  &kp RIGHT  &kp NUMBER_5  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_9  &trans  &trans  &kp N8  &trans  &kp NUMBER_7  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &trans  &trans  &kp NUMBER_6  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LEFT  &kp LEFT  &trans  &kp LS(N2)  &kp DOWN  &trans  &kp LS(NUMBER_3)  &kp RIGHT  &kp LS(NUMBER_4)  &trans  &trans  &trans  &kp LANGUAGE_1  &kp LANGUAGE_1  &trans  &trans  &kp LS(NUMBER_1)  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(N5)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RS(N9)  &trans  &trans  &kp RS(N8)  &trans  &kp RS(N7)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RS(N0)  &trans  &trans  &kp RS(NUMBER_6)  &trans
             >;
         };
 
@@ -68,6 +68,7 @@
         };
     };
 };
+
 // force trigger build
 // apply DYA studio fixes
 // fix central role and remove advertising config
