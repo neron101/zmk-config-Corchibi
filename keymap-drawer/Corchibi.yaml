@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: Corchibi}
 layers:
   default:
-  - ESC
   - TAB
+  - CLCK
   - LSHFT
   - LCTRL
   - A
   - Z
-  - LGUI
+  - '&mkp MB2'
   - W
   - X
   - LALT
@@ -16,16 +16,16 @@ layers:
   - R
   - F
   - V
-  - '1'
+  - LEFT GUI
   - G
   - B
-  - '2'
-  - '9'
+  - {t: SPACE, h: '1'}
+  - {t: $$trackball_19mm$$, h: Scroll}
   - Q
   - S
   - C
   - T
-  - SPACE
+  - '&mkp MB1'
   - BSPC
   - RET
   - '?'
@@ -41,40 +41,40 @@ layers:
   - U
   - J
   - M
-  - {t: A, h: '5'}
+  - {t: $$trackball_19mm$$, h: Mouse}
   - H
   - N
-  - '3'
-  - '8'
+  - BACKSPACE
+  - {t: $$trackball_19mm$$, h: Mouse}
   - P
   - L
   - ','
   - Y
-  - SPACE
+  - {t: ENTER, h: '2'}
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - LEFT
   - {t: ▽, type: trans}
   - '2'
-  - {t: ▽, type: trans}
+  - DOWN
   - {t: ▽, type: trans}
   - '3'
-  - ;
+  - RIGHT
   - '4'
-  - /
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LANGUAGE 1
+  - LANGUAGE 2
   - {type: held}
-  - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '1'
-  - '"'
-  - {t: ▽, type: trans}
+  - UP ARROW
+  - RIGHT
   - '5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -88,17 +88,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '8'
-  - '"'
+  - {t: ▽, type: trans}
   - '7'
-  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP PLUS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - ''''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '6'
   - {t: ▽, type: trans}
@@ -107,6 +107,26 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LEFT
+  - LEFT
+  - {t: ▽, type: trans}
+  - Sft+2
+  - DOWN
+  - {t: ▽, type: trans}
+  - Sft+3
+  - RIGHT
+  - Sft+4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LANGUAGE 1
+  - LANGUAGE 1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+1
+  - UP ARROW
+  - RIGHT ARROW
+  - Sft+5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,44 +135,24 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Sft+9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+8
+  - {t: ▽, type: trans}
+  - Sft+7
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+6
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   '3':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,7 +197,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
