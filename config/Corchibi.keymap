@@ -28,6 +28,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        L1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <23 12>;
+        };
+
+        L2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <16 13>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
