@@ -20,7 +20,7 @@ layers:
   - G
   - B
   - {t: SPACE, h: '1'}
-  - {t: $$trackball_19mm$$, h: Mouse}
+  - {t: $$trackball_19mm$$, h: Scroll}
   - Q
   - S
   - C
@@ -45,7 +45,7 @@ layers:
   - H
   - N
   - BACKSPACE
-  - {t: $$trackball_19mm$$, h: Mouse}
+  - {t: $$trackball_19mm$$, h: Scroll}
   - P
   - L
   - ','
