@@ -26,8 +26,8 @@ layers:
   - C
   - T
   - '&mkp MB1'
-  - KP MINUS
-  - KP EQUAL
+  - '-'
+  - '='
   - '?'
   - RIGHT
   - '{'
