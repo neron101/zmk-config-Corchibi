@@ -50,6 +50,11 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <4 1>;
         };
+
+        l3 {
+            bindings = <&lt 3 LEFT_ALT>;
+            key-positions = <17 14>;
+        };
     };
 
     keymap {
@@ -57,7 +62,7 @@
 
         default_layer {
             bindings = <
-&kp TAB  &kp CLCK  &kp LSHFT  &kp LCTRL  &kp A  &kp Z  &mkp MB2  &kp W  &kp X  &kp LALT  &kp E  &kp D  &kp R  &kp F  &kp V  &kp LEFT_GUI  &kp G  &kp B  &lt 1 SPACE  &TB1_scroll  &kp Q  &kp S  &kp C  &kp T  &mkp MB1  &kp MINUS  &kp EQUAL  &kp QMARK  &kp RIGHT  &kp LEFT_BRACE  &kp UP  &kp DOWN  &kp O  &kp DOT  &kp RIGHT  &kp I  &kp K  &kp U  &kp J  &kp M  &TB1_mouse  &kp H  &kp N  &kp BACKSPACE  &TB1_scroll  &kp P  &kp L  &kp COMMA  &kp Y  &lt 2 ENTER
+&kp TAB  &kp CLCK  &kp LSHFT  &kp LCTRL  &kp A  &kp Z  &mkp MB2  &kp W  &kp X  &lt 4 LEFT_ALT  &kp E  &kp D  &kp R  &kp F  &kp V  &kp LEFT_GUI  &kp G  &kp B  &lt 1 SPACE  &TB1_scroll  &kp Q  &kp S  &kp C  &kp T  &mkp MB1  &kp MINUS  &kp EQUAL  &kp QMARK  &kp RIGHT  &kp LEFT_BRACE  &kp UP  &kp DOWN  &kp O  &kp DOT  &kp LEFT_ARROW  &kp I  &kp K  &kp U  &kp J  &kp M  &TB1_mouse  &kp H  &kp N  &kp BACKSPACE  &TB1_scroll  &kp P  &kp L  &kp COMMA  &kp Y  &lt 2 ENTER
             >;
         };
 
