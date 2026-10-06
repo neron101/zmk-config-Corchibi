@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: cormoran
+      url-base: https://github.com/cormoran
     - name: yuchamichami
       url-base: https://github.com/yuchamichami
     - name: badjeff
@@ -9,6 +11,12 @@ manifest:
     - name: nuovotaka
       url-base: https://github.com/nuovotaka
   projects:
+    # ZMK本体（DYA Studio対応のcormoran版 / v0.3ベース）
+    - name: zmk
+      remote: cormoran
+      revision: v0.3-branch+dya
+      import: app/west.yml
+    # Corchibi用モジュール
     - name: zmk-driver-pat9125
       remote: yuchamichami
       revision: main
@@ -21,9 +29,18 @@ manifest:
     - name: zmk-pointing-acceleration-alpha
       remote: nuovotaka
       revision: main
-    - name: zmk
-      remote: zmkfirmware
-      revision: 354cff9
-      import: app/west.yml
+    # DYA Studio用モジュール
+    - name: zmk-module-ble-management
+      remote: cormoran
+      revision: zmk-v0.3.0.0
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: main
+    - name: zmk-module-settings-rpc
+      remote: cormoran
+      revision: main
+    - name: zmk-module-runtime-input-processor
+      remote: cormoran
+      revision: zmk-v0.3.0.0
   self:
     path: config
