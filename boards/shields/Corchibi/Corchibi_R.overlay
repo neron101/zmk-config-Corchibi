@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
 #include <input/processors/report_rate_limit.dtsi>
+#include <behaviors/battery_history_request.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -76,7 +77,8 @@
     input-processors =
         <&zip_report_rate_limit 8>,
         <&auto_mouse_layer 4 700>,
-        <&pointer_accel>;
+        <&pointer_accel>,
+        <&mouse_runtime_input_processor>; // DYA Studioから速度変更可
 
     scroll_layer {
         layers = <5>;
@@ -125,7 +127,8 @@
 &trackball_listener_L {
     status = "okay";
     device = <&trackball_split_L>;
-    input-processors = 
+    input-processors =
         <&zip_report_rate_limit 8>,
-        <&pointer_accel>;
+        <&pointer_accel>,
+        <&mouse_runtime_input_processor_l>; // DYA Studioから速度変更可（左ボール）
 };
